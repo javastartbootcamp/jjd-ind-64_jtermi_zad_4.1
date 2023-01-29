@@ -1,26 +1,26 @@
 package pl.javastart.task;
 
 public class Telewizor {
-    private boolean onOff;
+    private boolean isOn;
 
     public Telewizor() {
-        onOff = false;
+        isOn = false;
     }
 
     public Telewizor(boolean onOff) {
-        this.onOff = onOff;
+        this.isOn = onOff;
     }
 
     void turnOn() {
-        this.onOff = true;
+        this.isOn = true;
     }
 
     void turnOff() {
-        this.onOff = false;
+        this.isOn = false;
     }
 
     void showStatus() {
-        if (onOff) {
+        if (isOn) {
             System.out.println("Telewizor jest włączony");
         } else {
             System.out.println("Telewizor jest wyłączony");
